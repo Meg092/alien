@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/brian/Documents/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/brian/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/brian/Music/Music/Media.localized/chat/new/picker_clock/android/app/.cxx/RelWithDebInfo/2p1p5s50/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/brian/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/brian/Music/Music/Media.localized/chat/new/picker_clock/android/app/.cxx/RelWithDebInfo/2p1p5s50/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}

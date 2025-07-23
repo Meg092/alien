@@ -1,0 +1,28 @@
+{
+  "buildFiles": [
+    "/Users/brian/Documents/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/brian/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/brian/Music/Music/Media.localized/chat/new/picker_clock/android/app/.cxx/RelWithDebInfo/2p1p5s50/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/brian/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/brian/Music/Music/Media.localized/chat/new/picker_clock/android/app/.cxx/RelWithDebInfo/2p1p5s50/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {},
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/brian/Library/Android/sdk/ndk/26.3.11579264/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/brian/Library/Android/sdk/ndk/26.3.11579264/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": []
+}

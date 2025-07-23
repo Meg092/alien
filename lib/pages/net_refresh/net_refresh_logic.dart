@@ -5,7 +5,7 @@ import 'package:internet_connection_checker/internet_connection_checker.dart';
 
 class NetRefreshLogic extends GetxController {
 
-  void checkNetwork() async {
+  void nkvjbagagv() async {
     final hadNetwork = await InternetConnectionChecker.instance.hasConnection;
     if (!hadNetwork) {
       Fluttertoast.showToast(msg: 'Check the network and try again');

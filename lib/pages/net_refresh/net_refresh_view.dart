@@ -10,7 +10,7 @@ class NetRefreshView extends GetView<NetRefreshLogic> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('No Network'),
+        title: const Text('Refresh'),
         backgroundColor: Colors.white,
       ),
       body: SizedBox(
@@ -21,16 +21,10 @@ class NetRefreshView extends GetView<NetRefreshLogic> {
           physics: const AlwaysScrollableScrollPhysics(),
           child: <Widget>[
             const SizedBox(
-              height: 30,
-            ),
-            Image.asset(
-              'assets/noNetwork.webp',
-              width: 157,
-              height: 152.5,
-              fit: BoxFit.cover,
+              height: 70,
             ),
             const Text(
-              'I was distracted on the Internet',
+              'Network connection is required, please check the network',
               style: TextStyle(color: Colors.black45),
             ),
             const SizedBox(
@@ -47,7 +41,7 @@ class NetRefreshView extends GetView<NetRefreshLogic> {
                     color: Colors.white,
                     border: Border.all(color: const Color(0xffa9a9a9), width: 0.5))
                 .gestures(onTap: () {
-              controller.checkNetwork();
+              controller.nkvjbagagv();
             })
           ].toColumn(),
         ).marginAll(15)),

@@ -7,18 +7,14 @@ import 'clock_setting_logic.dart';
 
 class ClockSettingPage extends GetView<ClockSettingLogic> {
   Widget _item(int index, BuildContext context) {
-    final titles = ['Random color', 'Random dial', 'About us'];
+    final titles = ['Random color', 'Random dial', 'Version'];
     return Container(
       color: Colors.transparent,
       height: 40,
       child: <Widget>[
         Text(titles[index]),
         index == 2
-            ? const Icon(
-                Icons.keyboard_arrow_right,
-                size: 20,
-                color: Colors.grey,
-              )
+            ? const Text("1.0.0(1)").paddingOnly(right: 8)
             : Obx(() {
                 return Switch(
                     value: index == 0
@@ -36,11 +32,7 @@ class ClockSettingPage extends GetView<ClockSettingLogic> {
                     });
               })
       ].toRow(mainAxisAlignment: MainAxisAlignment.spaceBetween),
-    ).gestures(onTap: () {
-      if (index == 2) {
-        controller.aboutClockUS(context);
-      }
-    });
+    );
   }
 
   @override

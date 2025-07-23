@@ -11,8 +11,8 @@ class ClockDesignView extends GetView<ClockDesignLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.daugherty.value
-              ? const CircularProgressIndicator(color: Colors.blueAccent)
+          () => controller.tillman.value
+              ? const CircularProgressIndicator(color: Colors.white)
               : buildError(),
         ),
       ),
@@ -26,7 +26,7 @@ class ClockDesignView extends GetView<ClockDesignLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.sknjfqlm();
+              controller.diaocgmt();
             },
             icon: const Icon(
               Icons.restart_alt,

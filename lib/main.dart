@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:picker_clock/pages/clock_design/clock_design_binding.dart';
+import 'package:picker_clock/pages/clock_design/clock_design_view.dart';
 import 'package:picker_clock/pages/clock_main/clock_main_binding.dart';
 import 'package:picker_clock/pages/clock_main/clock_main_view.dart';
+import 'package:picker_clock/pages/clock_main/count_clock.dart';
 import 'package:picker_clock/pages/clock_setting/clock_setting_binding.dart';
 import 'package:picker_clock/pages/clock_setting/clock_setting_view.dart';
 import 'package:picker_clock/pages/net_refresh/net_refresh_binding.dart';
@@ -42,7 +45,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: Alien,
-      initialRoute: '/clock_main',
+      initialRoute: '/',
       theme: ThemeData(
         useMaterial3: true,
         primaryColor: primaryColor,
@@ -94,7 +97,9 @@ class MyApp extends StatelessWidget {
   }
 }
 List<GetPage<dynamic>> Alien = [
+  GetPage(name: '/', page: () => const ClockDesignView(), binding: ClockDesignBinding()),
   GetPage(name: '/clock_main', page: () => const ClockMainPage(), binding: ClockMainBinding()),
   GetPage(name: '/net_refresh', page: () => NetRefreshView(), binding: NetRefreshBinding()),
+  GetPage(name: '/clock_count', page: () => CountClock()),
   GetPage(name: '/clock_setting', page: () => ClockSettingPage(), binding: ClockSettingBinding()),
 ];
